@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <!-- ¡Ahora usamos el CSS local de la carpeta node_modules! -->
+    <link rel="stylesheet" href="/node_modules/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Calculadora de Edad</h1>
+        
+        <div class="grupo-input">
+            <label for="fechaNacimiento">Ingresa tu fecha de nacimiento:</label>
+            <input type="text" id="fechaNacimiento" placeholder="DD/MM/AAAA">
+            <span id="mensajeError" class="error"></span>
+        </div>
+
+        <button id="btnCalcular">Calcular</button>
+
+        <h2 id="resultado" style="display: none;">Tienes <span id="textoEdad"></span> de edad</h2>
+    </div>
+
+    <!-- Seguimos usando module -->
+    <script type="module" src="java.js"></script>
+</body>
+</html>
